@@ -10,7 +10,7 @@ const IndexPage = () =>{
     <p>Welcome to the Laughing Head Insurance Company</p>
     <StaticImage
     alt="logo for insurance company with a laughing head"
-    src="../images/Slide1.png"></StaticImage>
+    src="../images/LHIC.png"></StaticImage>
   </Layout>
   </div>
   )
