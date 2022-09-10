@@ -4,8 +4,8 @@ module.exports = {
     siteUrl: `https://www.laughingheadinsurance.com`
   },
   plugins: [
-    "gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", "gatsby-plugin-sharp", 
-    {
+    "gatsby-plugin-sass", "gatsby-transformer-sharp","gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", "gatsby-plugin-sharp", 
+  {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
