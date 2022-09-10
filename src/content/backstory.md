@@ -9,7 +9,7 @@ A small silvery vertical slash appeared in the air in front of Bina. Like openin
 
 ## Adventures in Tir Na Og
 
-Taking two steps into Bina vanished and the portal with him.
+Taking two steps in Bina vanished along with the portal.
 
 When he opened his eyes bina saw a vast green plain. Dotted amongst the landscape were cairns and other standing stones
 

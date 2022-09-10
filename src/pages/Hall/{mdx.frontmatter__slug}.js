@@ -1,19 +1,18 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Layout from '../../components/layout'
+import Seo from '../../components/seo'
 
 
-const DocPage = ({ data }) => {
- console.log(data)
+const InternPage = ({ data, children }) => {
+  console.log({children})
   return (
+    
     <Layout pageTitle={data.mdx.frontmatter.title}>
-      <p>{data.mdx.frontmatter.date}
-      </p>
-      <MDXRenderer>
-        {data.mdx.body}
-        
-      </MDXRenderer>
+      
+      {children}
+   
+  
     </Layout>
   
   )
@@ -23,15 +22,12 @@ query ($id: String) {
   mdx(id: {eq: $id}, frontmatter: {meta: {eq: "hall"}}) {
     frontmatter {
       title
-      date(formatString: "MMMM D, YYYY")
-      attachments{
-        publicURL
-      }
     }
     body
   }
 }
 `
+export const Head = ({ data }) => <Seo title={data.mdx.frontmatter.title} />
 
-export default DocPage
+export default InternPage
 

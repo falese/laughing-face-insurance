@@ -2,14 +2,15 @@ import * as React from 'react'
 import Layout from '../../components/layout'
 import { graphql, Link } from 'gatsby'
 
-const HallEntry = ({ data }) => {
+
+const HallPage = ({ data }) => {
     return (
         <Layout pageTitle="Hall of Fame">
     <ul>
     {
         data.allMdx.nodes.map((node) => (
           <article key={node.id}>
-            <h2><Link to={`../Hall/${node.slug}`}>
+            <h2><Link to={`./${node.frontmatter.slug}`}>
                 {node.frontmatter.title}
                 </Link>
             </h2>
@@ -26,12 +27,13 @@ export const query = graphql`
       nodes {
         frontmatter {
           title
+          slug
         }
         id
-        slug
+        
       }
     }
   }
 `
 
-export default HallEntry
+export default HallPage
