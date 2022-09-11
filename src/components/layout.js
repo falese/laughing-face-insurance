@@ -4,8 +4,8 @@ import { container,
     heading,
     navLinks,
     navLinkItem,
-    navLinkText,
-    siteTitle} from './styles.module.scss'
+    navLinkText} from './styles.module.scss'
+import Header from './header'
 
 const Layout = ({pageTitle, children}) => {
     const data = useStaticQuery(
@@ -20,7 +20,7 @@ const Layout = ({pageTitle, children}) => {
     )
     return(
         <div className={container}>
-            <header className={siteTitle}>{data.site.siteMetadata.title}</header>
+           <Header pageTitle={pageTitle}></Header>
             <nav>
                 <ul className={navLinks}>
                     <li className={navLinkItem}><Link to="/" className={navLinkText}>Home</Link> </li>
