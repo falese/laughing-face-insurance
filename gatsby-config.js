@@ -24,14 +24,6 @@ module.exports = {
   {
     resolve: 'gatsby-source-filesystem',
     options: {
-      "name": "log",
-      "path": "./src/content/log"
-    },
-    __key: "logEntries"
-  }, 
-  {
-    resolve: 'gatsby-source-filesystem',
-    options: {
       "name": "hall",
       "path": "./src/content/hall"
     },
