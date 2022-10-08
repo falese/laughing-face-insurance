@@ -2,37 +2,101 @@ $font-stack: Helvetica, sans-serif, ;
 $primary-color: rgb(80, 18, 18);
 $secondary-color: rgb(34,18,18);
 
-
 body {
-  font: 100% $font-stack;
-  background-color: rgb(246, 240, 240);
-}
-.container {
-    margin: auto;
-    max-width: 750px;
-    font-family: $font-stack;
+    font: 100% $font-stack;
+    background-color: rgb(246, 240, 240);
+    // border: 2px;
+    // border-style: dashed;
+    // border-color: red;
+    
   }
+  .container {
+      margin: auto;
+      max-width: auto;
+      // border: 2px;
+      // border-style: dashed;
+      // border-color: black;
+      font-family: $font-stack;
+    }
+    
+    .heading {
+      color: rgb(0, 4, 3);
+      // border: 2px;
+      // border-style: dashed;
+      // border-color: green;
+     
+    }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      padding-left: 0;
+      // border: 2px;
+      // border-style: dashed;
+      // border-color: blue;
+    }
+    .nav-link-item {
+      padding-right: 2rem;
+      // border: 2px;
+      // border-style: dashed;
+      // border-color: peru;
+    }
+    .nav-link-text {
+      color: black;
+      // border: 2px;
+      // border-style: dashed;
+      // border-color: yellow;
+    }
   
-  .heading {
-    color: rgb(0, 4, 3);
-   
+  .site-title {
+    font-size: 3rem;
+    font-family: "Mea Culpa",cursive;
+    color: rgba(31, 201, 170, 0.676);
+    font-weight: 700;
+    // border: 2px;
+    //   border-style: dashed;
+    //   border-color: orangered;
   }
-  .nav-links {
+  .row {
     display: flex;
-    list-style: none;
-    padding-left: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 5vw;
+    border: 10px;
+      border-style: dashed;
+      border-color: purple;
   }
-  .nav-link-item {
-    padding-right: 2rem;
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    border: 5px;
+      border-style: dashed;
+      border-color: darkblue;
   }
-  .nav-link-text {
-    color: black;
+  .double-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 2;
+    border: 5px;
+      border-style: dashed;
+      border-color: turquoise;
   }
-
-.site-title {
-  font-size: 3rem;
-  font-family: "Mea Culpa",cursive;
-  color: rgba(31, 201, 170, 0.676);
-  font-weight: 700;
-  margin: 3rem 0;
-}
+  .logo{
+    display: inline;
+    // border: 2px;
+    //   border-style: dashed;
+    //   border-color: pink;
+  }
+  .main{
+      background-image: url("../content//images/logo.png");
+      background-size: cover;
+      // border: 2px;
+      // border-style: dashed;
+      // border-color: tan;
+    }
+    .wrap{
+      width: 7vw;
+    }

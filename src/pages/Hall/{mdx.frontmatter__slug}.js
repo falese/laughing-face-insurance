@@ -12,7 +12,7 @@ const InternPage = ({ data, children }) => {
     <Layout pageTitle={data.mdx.frontmatter.title}>
       <GatsbyImage
       image= {image}
-      alt="ron the frickin man"
+      alt=""
       />
       {children}
    

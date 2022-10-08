@@ -1,10 +1,11 @@
 import * as React from 'react'
 import {Link, useStaticQuery, graphql} from 'gatsby'
-import { container,
+import { row,
     heading,
     navLinks,
     navLinkItem,
-    navLinkText} from './styles.module.scss'
+    navLinkText,
+    column, container} from './styles.module.scss'
 import Header from './header'
 
 const Layout = ({pageTitle, children}) => {
@@ -18,10 +19,13 @@ const Layout = ({pageTitle, children}) => {
             }
         }`
     )
+    
     return(
-        <div className={container}>
-           <Header pageTitle={pageTitle}></Header>
-            <nav>
+        <div>
+           <Header 
+           siteTitle={data.site.siteMetadata.title}
+           />
+            <nav className={row}>
                 <ul className={navLinks}>
                     <li className={navLinkItem}><Link to="/" className={navLinkText}>Home</Link> </li>
                         
@@ -32,9 +36,11 @@ const Layout = ({pageTitle, children}) => {
                    
                 </ul>
             </nav>
-            <main>
+            <main className={row}>
                 <h1 className={heading}>{pageTitle}</h1>
+                <div className={container}>
                 {children}
+                </div>
             </main>
         </div>
     )

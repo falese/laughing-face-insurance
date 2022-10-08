@@ -1,21 +1,34 @@
 import * as React from 'react'
-import {Link, useStaticQuery, graphql} from 'gatsby'
-import { siteTitle } from './styles.module.scss'
+import { siteTitle, wrap, row, column, doubleColumn } from './styles.module.scss'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { graphql, useStaticQuery } from 'gatsby'
 
-const Header =() =>{
-    const data = useStaticQuery(
-        graphql`
-        query{
-            site{
-                siteMetadata{
-                    title
-                }
-            }
-        }`
-    )
+export default function Header(props) {
+    const data = useStaticQuery(graphql`
+    {
+      imageSharp(fixed: {originalName: {eq: "logo.png"}}) {
+        gatsbyImageData
+      }
+    }
+  `)
+    const logoImage = getImage(data.imageSharp.gatsbyImageData)
     return(
-        <header className={siteTitle}>{data.site.siteMetadata.title}</header>
+        <div className={row}>
+            <div className={column}>
+                <div>
+                <GatsbyImage 
+                    image={logoImage}
+                    alt="logo"
+                    className={wrap}
+                />
+                   
+                </div>
+            </div>
+            <div className={doubleColumn}>
+                <header className={siteTitle}>{props.siteTitle}</header>
+            </div>
+        </div>
+
     )
 }
 
-export default Header
