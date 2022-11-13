@@ -9,13 +9,13 @@
  */
 module.exports = {
   siteMetadata: {
-    title: "Laughing Head Insurance Company",
+    title: `Laughing Head Insurance Company`,
     author: {
-      name: "LHIC",
-      summary: "Hi",
+      name: `LHIC`,
+      summary: `Hi`,
     },
-    description: "Learn all about our mission and purpose",
-    siteUrl: "https://www.laughingheadinsurance.com",
+    description: `Learn all about our mission and purpose`,
+    siteUrl: `https://www.laughingheadinsurance.com/`,
  
   },
   plugins: [
