@@ -1,3 +1,8 @@
+---
+title: Backstory
+date: "2022-11-11 15:53:46"
+description: "What happens at the end"
+---
 
 # Experiments in Knowledge
 
@@ -31,15 +36,17 @@ He will grant Bina the power to accumulate all aspects of knowledge, but never h
 
 Bina starts to feel a warm glow.  He sees no more.
 
-# Aspects
+## Aspects
 
 |Aspect|Name|Race|Class|Background|Mark|
 |---|---|---|---|---|---|
-|War (cogadh)|Morthos|Deep Gnome|Fighter||![image](./images/war.png)|
-|Tempest (stoirm)|Sagweth|Deep Gnome|Barbarian||![image](./images/storm.png)|
-|Death (bás)|Gonthos|Deep Gnome|Rogue||![image](./images/death.png)|
-|Life (saol)|Gnomos|Rock Gnome|Bard|Gnomos wakes up. He craves bread and water. He’s got a strange birthmark.  He remembers tons of songs, but not any with him in it.|![image](./images/life.png)|
-|Light (solas)|Galweth|Rock Gnome|Sorcerer||![image](./images/light.png)||
-|Thought (smaoineamh)|Curutha|Rock Gnome|Wizard||![image](./images/thought.png)|
-|Nature (nádúr)|Gwimlos|Rock Gnome|Ranger||![image](./images/nature.png)|
-|Trickery (feall)|Sanatha|Rock Gnome|Artificer||![image](./images/trickery.png)|
+|War (cogadh)|Morthos|Deep Gnome|Fighter||![image](./war.png)|
+|Tempest (stoirm)|Sagweth|Deep Gnome|Barbarian||![image](./storm.png)|
+|Death (bás)|Gonthos|Deep Gnome|Rogue||![image](./death.png)|
+|Life (saol)|Gnomos|Rock Gnome|Bard||![image](./life.png)|
+|Light (solas)|Galweth|Rock Gnome|Sorcerer||![image](./light.png)||
+|Thought (smaoineamh)|Curutha|Rock Gnome|Wizard||![image](./thought.png)|
+|Nature (nádúr)|Gwimlos|Rock Gnome|Ranger||![image](./nature.png)|
+|Trickery (feall)|Sanatha|Rock Gnome|Artificer||![image](./trickery.png)|
+
+Gnomos wakes up. He craves bread and water. He’s got a strange birthmark.  He remembers tons of songs, but not any with him in it.
