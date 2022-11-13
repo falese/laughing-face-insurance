@@ -12,7 +12,7 @@ module.exports = {
     title: "Laughing Head Insurance Company",
     author: {
       name: "LHIC",
-      summary: "We are the company you call when you need someone to take a loss",
+      summary: "Hi",
     },
     description: "Learn all about our mission and purpose",
     siteUrl: "https://www.laughingheadinsurance.com",
